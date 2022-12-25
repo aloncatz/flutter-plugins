@@ -111,9 +111,9 @@ public class ResolutionFeature extends CameraFeature<ResolutionPreset> {
   @VisibleForTesting
   static Size computeBestPreviewSize(int cameraId, ResolutionPreset preset)
       throws IndexOutOfBoundsException {
-    if (preset.ordinal() > ResolutionPreset.high.ordinal()) {
-      preset = ResolutionPreset.high;
-    }
+//    if (preset.ordinal() > ResolutionPreset.high.ordinal()) {
+//      preset = ResolutionPreset.high;
+//    }
     if (Build.VERSION.SDK_INT >= 31) {
       EncoderProfiles profile =
           getBestAvailableCamcorderProfileForResolutionPreset(cameraId, preset);
